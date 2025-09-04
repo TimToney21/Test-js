@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plus_Minus</title>
+    <title>Counter</title>
     <script src="app.js" defer></script>
     <style>
     .counter-container {
@@ -28,19 +28,14 @@
 </head>
 <body>
     <div class="counter-container">
-        <H1>Plus Minus</H1>
-        <input
-            class="counter-value"
-            type="number"
-            id="input"
-            value="5"
-        />
-        <div class="d-flex mb-2">
-            <button onclick="changeCount(-1)">-</button>
-            <button onclick="changeCount(1)">+</button>
+        <H1>Counter</H1>
+        <div>
+            <button id="decrement">-</button>
+            <button id="reset">0</button>
+            <button id="increment">+</button>
         </div>
-        <div class="text-bg-light p-3 text-center">
-            <h2>Результат:<p id="result">6</p></h2>
+        <div">
+            <h2>Result:<p id="result">0</p></h2>
         </div>
 
     </div>

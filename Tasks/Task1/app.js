@@ -1,14 +1,22 @@
 const resultElement = document.getElementById('result');
-const input = document.getElementById('input');
-const plus = document.getElementById('plus');
-const minus = document.getElementById('minus');
-let count = 5;
+const increaseBtn = document.getElementById('increment');
+const decreaseBtn = document.getElementById('decrement');
+const resetBtn = document.getElementById('reset');
+let result = 0
 
-function setInput() {
-    count = parseInt(input.value);
+function newResult() {
+    resultElement.textContent = result
 }
 
-function changeCount(value) {
-    count += value;
-    resultElement.textContent = count
-}
+decreaseBtn.addEventListener('click', function() {
+    result--;
+    newResult();
+});
+increaseBtn.addEventListener('click', function() {
+    result++;
+    newResult();
+});
+resetBtn.addEventListener('click', function(){
+    result = 0;
+    newResult();
+});
