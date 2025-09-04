@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus_Minus</title>
+    <script src="app.js" defer></script>
+    <style>
+    .counter-container {
+        text-align: center;
+        margin: 50px;
+        font-family: Arial, sans-serif;
+    }
+        
+    .counter-value {
+        font-size: 24px;
+        margin: 20px;
+        font-weight: bold;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 22px;
+        margin: 7px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="counter-container">
+        <H1>Plus Minus</H1>
+        <input
+            class="counter-value"
+            type="number"
+            id="input"
+            value="5"
+        />
+        <div class="d-flex mb-2">
+            <button onclick="changeCount(-1)">-</button>
+            <button onclick="changeCount(1)">+</button>
+        </div>
+        <div class="text-bg-light p-3 text-center">
+            <h2>Результат:<p id="result">6</p></h2>
+        </div>
+
+    </div>
+    
+</body>
+</html>
