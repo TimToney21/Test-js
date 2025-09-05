@@ -1,13 +1,10 @@
-const toggleBtn = document.getElementById("toggle");
-const content = document.getElementById("content");
-let itVisible = true;
+const toggleBtn = document.getElementById('toggle');
+const content = document.getElementById('content');
 
 toggleBtn.addEventListener('click', function() {
-    if(itVisible) {
-        content.style = 'display: none';
-    } else {
-        content.style.display = 'inline';
-    }
-    toggleBtn.textContent = itVisible ? 'Показать' : 'Скрыть';
-    itVisible = !itVisible;
-})
+    content.classList.toggle('hidden');
+
+    toggleBtn.textContent = 
+    content.classList.contains('hidden') 
+    ? 'Показать' : 'Свернуть';
+});

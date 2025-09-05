@@ -2,12 +2,21 @@
 <html>
 <head>
     <title>Toggle</title>
+    <style>
+        .content {
+            display: block;
+        }
+
+        .content.hidden {
+            display: none;
+        }
+    </style>
     <script src="app.js" defer></script>
 </head>
 <body>
     <button id="toggle">Свернуть</button>
 
-    <div id="content">
+    <div class="content" id="content">
         <h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
             <p>elit. Aperiam ut accusamus excepturi, eos ullam</p> 
