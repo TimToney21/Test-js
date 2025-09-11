@@ -1,0 +1,21 @@
+
+.note {
+    padding: 10px;
+    margin: 2px 0;
+    border: 1px solid #000000;
+    background-color: #f8f9fa;
+    color: #000000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background-color: #db1428;
+    color: white;
+    border: none;
+    border-radius: 21px;
+    padding: 10px 10px;
+
+}
