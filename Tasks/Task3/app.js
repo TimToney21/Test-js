@@ -5,16 +5,11 @@ const listElement = document.getElementById('list')
 
 createBtn.onclick = function() {
     if(inputElement.value.length === 0) {return}
-    listElement.insertAdjacentHTML(
-        'beforeend', 
-            `<li class="list-group-item d-flex 
-            justify-content-between
-            align-items-center">
-            <span>${inputElement.value}</span>
-            <span>
-                <span class="btn btn-small btn-danger" 
-                data-type="remove">&times;</span>
-            </span>`)
+    const note = document.createElement('li')
+    const text = document.createElement('span')
+    text.textContent = inputElement.value 
+    note.appendChild(text)
+    listElement.appendChild(note)
     inputElement.value = ''
 }
 
