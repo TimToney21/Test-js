@@ -4,7 +4,7 @@ const listElement = document.getElementById('list')
 
 
 createBtn.onclick = function() {
-    if(inputElement.value.length === 0) {return}
+    if(inputElement.value.length === 0)return
     const note = document.createElement('li')
     note.classList.add('note')
 
