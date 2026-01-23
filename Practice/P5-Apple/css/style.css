@@ -1,0 +1,24 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+.section-main{
+    padding-top: 55px;
+    text-align: center;
+    min-height: 692px;
+}
+.iphone-pro{
+    background-image: url(../images/hero_iphone_17_pro.jpg);
+}
+.iphone-air{
+
+}
+.iphone{
+
+}
